@@ -54,8 +54,8 @@
 	--bg-color					: #F4F0E9;
 	--text-color				: #62605D;
 
-	--accent-color				: #000;
-	--accent-secondary-color	: #000;
+	--accent-color				: #11116d;
+	--accent-secondary-color	: #11116d;
 	
 	--white-color				: #FFFFFF;
 	--divider-color				: #00000014;
@@ -353,7 +353,7 @@ a:focus{
 }
 
 .dark-section{
-	background-color: var(--primary-color);
+	background-color: var(--accent-color);
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
@@ -6659,14 +6659,14 @@ header.main-header .header-sticky.active{
 	overflow: hidden;
 
 }
-.hero-metal-4{
+/* .hero-metal-4{
 	background: url('../images/hero-bg-image-metal4.webp') no-repeat;
 		background-position: center center;
 	background-size: cover;
 	padding: 195px 0 90px;
 	overflow: hidden;
 
-}
+} */
 
 .hero-metal::before{
 	content: '';
