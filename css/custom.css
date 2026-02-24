@@ -4559,7 +4559,7 @@ header.main-header .header-sticky.active{
 /************************************/
 
 .page-gallery{
-	padding: 100px 0 70px;
+	padding: 0px 0 70px;
 }
 
 .page-gallery-box .photo-gallery{
@@ -7491,7 +7491,7 @@ header.main-header .header-sticky.active{
 }
 
 .our-projects-metal{
-    padding: 100px 0;
+    padding: 100px 0px 0px 0px;
 }
 
 .our-projects-metal .project-item{
