@@ -7166,6 +7166,8 @@ header.main-header .header-sticky.active{
 	aspect-ratio: 1 / 1.22;
 	object-fit: cover;
 	border-radius: 10px;
+		position: relative;
+	overflow: hidden;
 }
 
 .why-choose-image-box-2-metal{
