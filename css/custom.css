@@ -6659,14 +6659,14 @@ header.main-header .header-sticky.active{
 	overflow: hidden;
 
 }
-/* .hero-metal-4{
+.hero-metal-4{
 	background: url('../images/hero-bg-image-metal4.webp') no-repeat;
 		background-position: center center;
 	background-size: cover;
 	padding: 195px 0 90px;
 	overflow: hidden;
 
-} */
+}
 
 .hero-metal::before{
 	content: '';
@@ -11183,7 +11183,7 @@ header.main-header .header-sticky.active{
   .heroSlider,
   .heroSlider .swiper-slide,
   .heroSlider .hero-metal {
-    height: 70vh !important;
+    height: 90vh !important;
     min-height: 70vh !important;
   }
 }
