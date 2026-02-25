@@ -12,7 +12,7 @@
     <!-- Page Title -->
     <title>Wire Point Services | Complete Wiring & Maintenance Experts </title>
     <!-- Favicon Icon -->
-    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.webp">
     <!-- Google Fonts Css-->
     <link rel="preconnect" href="https://fonts.googleapis.com/">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
@@ -254,72 +254,169 @@
                     <!-- Content Us Box End -->
                 </div>
 
-                <div class="col-xl-7">
-                    <!-- Contact Us Form Start -->
-                    <div class="contact-us-form">
-                        <!-- Section Title Start -->
-                        <div class="section-title">
-                            <h3 class="wow fadeInUp">Get In Touch</h3>
-                            <h2 class="text-anime-style-3" data-cursor="-opaque">Send Us A Message</h2>
-                            <p class="wow fadeInUp" data-wow-delay="0.2s">Have a question, project idea, or design
-                                inquiry? </p>
-                        </div>
-                        <!-- Section Title End -->
+              <div class="col-xl-7">
+          <!-- Contact Us Form Start -->
+          <div class="contact-us-form">
+            <!-- Section Title Start -->
+            <div class="section-title">
+              <h3 class="wow fadeInUp iconsvg">Get In Touch</h3>
+              <h2 class="text-anime-style-3" data-cursor="-opaque">Send Us A Message</h2>
+              <p class="wow fadeInUp" data-wow-delay="0.2s">Have a question or project idea? We’d love to
+                hear from you. Let’s discuss your design needs.</p>
+            </div>
+            <!-- Section Title End -->
 
-                        <!-- Contact Form Start -->
-                        <div class="contact-form">
-                            <form id="contactForm" action="#" method="POST" data-toggle="validator" class="wow fadeInUp"
-                                data-wow-delay="0.4s">
-                                <div class="row">
-                                    <div class="form-group col-md-6 mb-4">
-                                        <label class="form-label">First Name *</label>
-                                        <input type="text" name="fname" class="form-control" id="fname"
-                                            placeholder="Enter Your First Name" required>
-                                        <div class="help-block with-errors"></div>
-                                    </div>
+            <!-- Contact Form Start -->
+            <div class="contact-form">
+              <form id="customForm" action="#" method="POST" data-toggle="validator" class="wow fadeInUp"
+                data-wow-delay="0.4s">
+                <div class="row">
+                  <div class="form-group col-md-6 mb-4">
+                    <label class="form-label">First Name *</label>
+                    <input type="text" name="fname" class="form-control" id="fname" placeholder="Enter Your First Name"
+                      required>
+                    <div class="help-block with-errors"></div>
+                  </div>
 
-                                    <div class="form-group col-md-6 mb-4">
-                                        <label class="form-label">Last Name *</label>
-                                        <input type="text" name="lname" class="form-control" id="lname"
-                                            placeholder="Enter Your Last Name" required>
-                                        <div class="help-block with-errors"></div>
-                                    </div>
+                  <div class="form-group col-md-6 mb-4">
+                    <label class="form-label">Last Name *</label>
+                    <input type="text" name="lname" class="form-control" id="lname" placeholder="Enter Your Last Name"
+                      required>
+                    <div class="help-block with-errors"></div>
+                  </div>
 
-                                    <div class="form-group col-md-6 mb-4">
-                                        <label class="form-label">Phone Number *</label>
-                                        <input type="text" name="phone" class="form-control" id="phone"
-                                            placeholder="Enter Your Phone Number" required>
-                                        <div class="help-block with-errors"></div>
-                                    </div>
+                  <div class="form-group col-md-6 mb-4">
+                    <label class="form-label">Phone Number *</label>
+                    <input type="text" name="phone" class="form-control" id="phone"
+                      placeholder="Enter Your Phone Number" required>
+                    <div class="help-block with-errors"></div>
+                  </div>
 
-                                    <div class="form-group col-md-6 mb-4">
-                                        <label class="form-label">Email Address *</label>
-                                        <input type="email" name="email" class="form-control" id="email"
-                                            placeholder="Enter Your Email Address" required>
-                                        <div class="help-block with-errors"></div>
-                                    </div>
+                  <div class="form-group col-md-6 mb-4">
+                    <label class="form-label">Email Address *</label>
+                    <input type="email" name="email" class="form-control" id="email"
+                      placeholder="Enter Your Email Address" required>
+                    <div class="help-block with-errors"></div>
+                  </div>
 
-                                    <div class="form-group col-md-12 mb-5">
-                                        <label class="form-label">Message</label>
-                                        <textarea name="message" class="form-control" id="message" rows="10"
-                                            placeholder="Any Additional Message...."></textarea>
-                                        <div class="help-block with-errors"></div>
-                                    </div>
+                  <div class="form-group col-md-12 mb-5">
+                    <label class="form-label">Message</label>
+                    <textarea name="message" class="form-control" id="message" rows="10"
+                      placeholder="Any Additional Message...."></textarea>
+                    <div class="help-block with-errors"></div>
+                  </div>
 
-                                    <div class="col-lg-12">
-                                        <div class="contact-form-btn">
-                                            <button type="submit" class="btn-default"><span>Submit
-                                                    Message</span></button>
-                                            <div id="msgSubmit" class="h3 hidden"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                        <!-- Contact Form End -->
-                    </div>
-                    <!-- Contact Us Form End -->
+                  <div class="col-lg-12">
+               <div class="contact-form-btn">
+  <button type="submit" class="btn-default" id="submitBtn">
+    <span id="btnText">Submit Message</span>
+    <span id="btnLoader" style="display:none;">
+      <i class="fa fa-spinner fa-spin"></i> Submitting...
+    </span>
+  </button>
+  <div id="msgSubmit" class="h3 hidden"></div>
+</div>
+                  </div>
                 </div>
+              </form>
+              <script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  const form = document.getElementById("customForm");
+  const submitBtn = document.querySelector("#customForm button[type='submit']");
+
+  form.addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    const fname = document.getElementById("fname").value.trim();
+    const lname = document.getElementById("lname").value.trim();
+    const phone = document.getElementById("phone").value.trim();
+    const email = document.getElementById("email").value.trim();
+
+    // 🔹 Required Validation
+    if (!fname || !lname || !phone || !email) {
+      showToast("Please fill all required fields ❌", "error");
+      return;
+    }
+
+    // 🔹 Email Validation
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+    if (!emailPattern.test(email)) {
+      showToast("Please enter a valid email address ❌", "error");
+      return;
+    }
+
+    // 🔹 Phone Validation (10 digit only)
+    const phonePattern = /^[0-9]{10}$/;
+    if (!phonePattern.test(phone)) {
+      showToast("Please enter a valid 10-digit phone number ❌", "error");
+      return;
+    }
+
+    // 🔹 Disable Button + Loading State
+    submitBtn.disabled = true;
+    const originalText = submitBtn.innerHTML;
+    submitBtn.innerHTML = "Submitting...";
+    submitBtn.style.opacity = "0.7";
+    submitBtn.style.cursor = "not-allowed";
+
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch("send_inquiry.php", {
+        method: "POST",
+        body: formData
+      });
+
+      const result = await response.json();
+
+      if (result.status === "success") {
+        showToast(result.message, "success");
+        form.reset();
+      } else {
+        showToast(result.message || "Something went wrong ❌", "error");
+      }
+
+    } catch (error) {
+      showToast("Server error. Please try again later ❌", "error");
+    }
+
+    // 🔹 Enable Button Again
+    submitBtn.disabled = false;
+    submitBtn.innerHTML = originalText;
+    submitBtn.style.opacity = "1";
+    submitBtn.style.cursor = "pointer";
+  });
+
+  // 🔹 Toast Function
+  function showToast(message, type) {
+    const toast = document.createElement("div");
+    toast.innerText = message;
+    toast.style.position = "fixed";
+    toast.style.top = "20px";
+    toast.style.right = "20px";
+    toast.style.padding = "12px 20px";
+    toast.style.color = "#fff";
+    toast.style.borderRadius = "5px";
+    toast.style.zIndex = "9999";
+    toast.style.fontSize = "14px";
+    toast.style.boxShadow = "0 5px 15px rgba(0,0,0,0.2)";
+    toast.style.backgroundColor = type === "success" ? "#28a745" : "#dc3545";
+    toast.style.transition = "0.3s ease";
+    document.body.appendChild(toast);
+
+    setTimeout(() => {
+      toast.remove();
+    }, 3000);
+  }
+
+});
+</script>
+            </div>
+            <!-- Contact Form End -->
+          </div>
+          <!-- Contact Us Form End -->
+        </div>
             </div>
         </div>
     </div>
